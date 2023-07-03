@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section-center {
+    width: 80%;
+    margin: 0 auto;
+    padding: .5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.grocery-form {
+    padding: 1rem;
+    text-align: center;
+
+}
+.grocery-form p {
+    padding: .2rem;
+    box-shadow: 0 0 3px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .7rem;
+    font-weight: bold;
+    opacity: 0;
+    border-radius: .5rem;
+    transition: opacity .2s;
+}
+.grocery-form p.show-alert {
+    opacity: 1;
+}
+.grocery-form h3 {
+    text-transform: uppercase;
+    padding: 1rem;
+    letter-spacing: .2rem;
+}
+.grocery-form .form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grocery-form .form-control input {
+    padding: .3rem;
+    transition: .2s;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: .3rem 0 0 .3rem;
+}
+.grocery-form .form-control .input-field:focus {
+    border:none;
+    box-shadow: inset 0 0 3px 3px rgb(126, 202, 227);
+}
+.grocery-form .form-control .submit-btn {
+    border: none;
+    border-radius: 0 .5rem .5rem 0;
+    padding: .3rem .5rem .3rem .5rem;
+    background-color: green;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+.grocery-form .form-control .submit-btn:hover {
+    background-color: rgb(123, 176, 42);
+}
+
+.grocery-container {
+    padding: .5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: .5rem;
+    box-shadow: 0 0 3px;
+    visibility: hidden;
+}
+.grocery-container.show-container {
+    visibility: visible;
+}
+.grocery-item {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.crossed-out {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+.grocery-item .title {
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+.btn-container button {
+    padding: .2rem;
+    font-size: .8rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-container .delete-btn:hover {
+    color: red;
+}
+.btn-container .edit-btn:hover {
+    color: rgb(15, 174, 15);
+}
+
+.grocery-container .clear-btn {
+    padding:.5rem;
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+    border: none;
+    border: 1px solid black;
+    box-shadow: 0 0 3px;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+.grocery-container .clear-btn:hover {
+    background-color: lightcoral;
+    border: 1px solid black;
+}
